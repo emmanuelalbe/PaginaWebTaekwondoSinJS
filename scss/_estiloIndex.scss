@@ -1,0 +1,306 @@
+@media (min-width:320px) and (max-width:520px){
+*{
+   @include siempre;
+}
+
+html{
+    font-size: 62.5%;
+}
+    //Sección Header - Titulo - Parrafo
+.contenedorTituloParrafo{
+    @include flexCenter;
+    flex-direction: column;
+}
+    
+.contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
+    @include tituloMobile;
+}
+    
+.contenedorTituloParrafo p{
+    @include parrafoMobile;
+}
+
+.headerIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerIndex figure img{
+    width:30rem;
+}
+
+//Sección Main- Tarjetas Index
+
+.contenedorIndex{
+    margin:2rem;
+    color:$letrablanca;
+}
+
+.contenedorIndex .cardSede{
+    color: white;
+    margin-top: 7rem;
+}
+
+.contenedorIndex .cardInstructor{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contenedorIndex .cardContactos{
+    margin-top: 4rem;
+}
+
+.techoCard, .pisoCard{
+    background-color:rgba(77, 76, 76, 0.71);
+    height: 2.2rem;
+    border-radius:$bordeCard;
+}
+
+.tituloCard{
+    @include tituloCard;
+    text-align: center
+}
+
+.parrafoCard{
+    @include parrafoCard;
+}
+
+}
+
+@media (min-width:521px) and (max-width:730px){
+
+*{
+    @include siempre;
+}
+   
+html{
+    font-size: 62.5%;
+}
+
+//Sección Header - Titulo - Parrafo
+.contenedorTituloParrafo{
+    @include flexCenter;
+    flex-direction: column;
+}
+        
+.contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
+    @include tituloTablet;
+}
+        
+.contenedorTituloParrafo p{
+    @include parrafoTablet;
+}
+
+.headerIndex{
+    @include flexCenter;
+    flex-direction: column; 
+}
+    
+.headerIndex figure img{
+    width:40rem;
+    filter: drop-shadow(0.2rem 0.8rem 0.2rem rgba(16, 204, 221, 0.128));
+}
+
+    //Sección Main- Tarjetas Index
+.contenedorIndex{
+    margin:6rem;
+    color:$letrablanca;
+}
+    
+.contenedorIndex .cardSede{
+    color: white;
+    margin-top: 7rem;
+}
+
+    
+.contenedorIndex .cardInstructor{
+    margin:4rem 0 4rem 0;
+}
+    
+.contenedorIndex .cardContactos{
+    margin-top: 4rem;
+}
+
+.cardEventos .tituloCard{
+    color:white;
+}
+    
+.techoCard,.pisoCard{
+    background-color:rgba(77, 76, 76, 0.71);
+    height: 2.5rem;
+    border-radius:$bordeCard;
+}
+    
+.tituloCard{
+    @include tituloCardTablet;
+}
+ 
+.parrafoCard{
+    @include parrafoCardTablet;
+}
+
+}
+
+@media (min-width:731px) and (max-width:991px){
+
+*{
+    @include siempre;
+}
+           
+html{
+    font-size: 62.5%;
+}
+        
+//Sección Header - Titulo - Parrafo
+
+.contenedorTituloParrafo{
+    @include flexCenter;
+    flex-direction: column;
+}
+                
+.contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
+     @include tituloNotebook;
+ }
+                
+.contenedorTituloParrafo p{
+    @include parrafoNotebook;
+}
+        
+.headerIndex{
+    @include flexCenter;
+    flex-direction:column;
+}
+    
+.headerIndex figure{
+    margin-top: 6rem;
+}
+
+.headerIndex figure img{
+    width:45rem;
+    filter: drop-shadow(0.6rem 0.8rem 0.2rem rgb(0, 0, 0));
+}
+        
+//Sección Main- Tarjetas Index
+.contenedorIndex{
+    @include flexCenter;
+    flex-direction: column;
+    margin:8rem;
+    color:$letrablanca;
+}
+            
+.contenedorIndex .cardSede{
+    margin-top:9rem;        
+}
+
+.contenedorIndex .cardInstructor{
+    margin:6rem 0 6rem 0;
+}
+                 
+.contenedorIndex .cardContactos{
+    margin-top: 6rem;
+}
+
+.cardEventos .tituloCard,.cardInstructor .tituloCard,.cardSede .tituloCard,.cardContactos .tituloCard{
+    @include tituloCardNotebook;
+ }
+            
+.techoCard,.pisoCard{
+    background-color:rgba(77, 76, 76, 0.71);
+    height: 4rem;
+    margin-bottom: 2rem;
+    border-radius:$bordeCard;
+}
+
+.parrafoCard{
+    @include parrafoCardNotebook;
+}
+}
+    
+/*Falta modificar este ultimo*/
+@media (min-width:992px){
+
+*{
+    @include siempre;
+}
+               
+html{
+    font-size: 62.5%;
+}
+
+//Sección Header - Titulo - Parrafo
+
+.contenedorTituloParrafo{
+    @include flexCenter;
+    flex-direction: column;
+}
+                    
+.contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
+     @include tituloNotebook;
+}
+                    
+.contenedorTituloParrafo p{
+    @include parrafoNotebook;
+}
+            
+.headerIndex {
+    @include flexCenter;
+    flex-direction: row-reverse;
+}
+                
+.headerIndex figure img{
+    margin:13rem 0rem 0rem 1.6rem;
+    width:36rem;
+    filter: drop-shadow(0.6rem 1rem 0.6rem rgb(0, 0, 0));
+}
+            
+ //Sección Main- Tarjetas Index
+
+.contenedorIndex{
+    display:grid;
+    margin:8rem;
+    color:$letrablanca;
+    grid-template-areas: 
+    "sede instructor"
+    "contactos eventos";
+    grid-column-gap:5rem;
+    grid-row-gap:5rem;
+}
+                
+.contenedorIndex .cardSede{
+    grid-area: sede;      
+}
+    
+.contenedorIndex .cardInstructor{
+    grid-area: instructor;
+}
+                
+.contenedorIndex .cardEventos{
+    grid-area: eventos;
+}
+                
+.contenedorIndex .cardContactos{
+    grid-area: contactos;
+}
+    
+    
+.cardEventos .tituloCard,.cardInstructor .tituloCard,.cardSede .tituloCard,.cardContactos .tituloCard{
+    @include tituloCardNotebook;
+}
+                
+.techoCard,.pisoCard{
+    background-color:rgba(77, 76, 76, 0.71);
+    height: 4rem;
+    margin-bottom: 2rem;
+    border-radius:$bordeCard;
+}
+    
+.parrafoCard{
+     @include parrafoCardNotebook;
+    margin-bottom: 2rem;
+}
+           
+}
+
+

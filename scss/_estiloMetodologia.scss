@@ -1,0 +1,202 @@
+@media (min-width: 320px) and (max-width: 520px) {
+  * {
+    @include siempre;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  main .imagenesMetodologia {
+    margin-bottom: 7rem;
+  }
+
+  .imagenesMetodologia figure {
+    text-align: center;
+  }
+
+  .imagenesMetodologia figure img {
+    width: 28rem;
+    border: 0.1rem solid rgb(210, 210, 210);
+    border-radius: 3rem;
+    box-shadow: 0.3rem -0.2rem 0.9rem -0.3rem rgba(118, 213, 247, 1);
+    transition: $transicion;
+  }
+
+  .imagenesMetodologia figure img:hover {
+    width: 32rem;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 730px) {
+  * {
+    @include siempre;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  main .imagenesMetodologia {
+    margin-bottom: 7rem;
+  }
+
+  .imagenesMetodologia figure {
+    text-align: center;
+  }
+
+  .imagenesMetodologia figure img {
+    width: 32rem;
+    border: 0.1rem solid rgb(210, 210, 210);
+    border-radius: 3rem;
+    box-shadow: 0.3rem -0.2rem 0.9rem -0.3rem rgba(118, 213, 247, 1);
+    transition: $transicion;
+  }
+
+  .imagenesMetodologia figure img:hover {
+    width: 35rem;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 931px) {
+  * {
+    @include siempre;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .metodologia {
+    justify-content: center;
+
+    display: grid;
+    grid-template-areas:
+      "uno" "dos"
+      "tres" "cuatro"
+      "cinco" "seis"
+      "siete";
+    grid-column-gap: 5rem;
+    grid-row-gap: 4rem;
+  }
+
+  .imagenesMetodologia figure img {
+    margin: 2rem;
+    width: 32rem;
+    border: 0.1rem solid rgb(210, 210, 210);
+    border-radius: 3rem;
+    box-shadow: 0.3rem -0.2rem 0.9rem -0.3rem rgba(118, 213, 247, 1);
+    transition: $transicion;
+  }
+
+  .imagenesMetodologia figure img:hover {
+    width: 33rem;
+  }
+
+  .contenedorUno,
+  .contenedorDos,
+  .contenedorTres,
+  .contenedorCuatro,
+  .contenedorCinco,
+  .contenedorSeis,
+  .contenedorSiete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contenedorUno {
+    grid-area: uno;
+  }
+
+  .contenedorDos {
+    grid-area: dos;
+  }
+  .contenedorTres {
+    grid-area: tres;
+  }
+  .contenedorCuatro {
+    grid-area: cuatro;
+  }
+  .contenedorCinco {
+    grid-area: cinco;
+  }
+  .contenedorSeis {
+    grid-area: seis;
+  }
+  .contenedorSiete {
+    grid-area: siete;
+  }
+}
+
+@media (min-width: 931px) {
+  * {
+    @include siempre;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .metodologia {
+    justify-content: center;
+
+    display: grid;
+    grid-template-areas:
+      "uno" "dos"
+      "tres" "cuatro"
+      "cinco" "seis"
+      "siete";
+  }
+
+  .imagenesMetodologia figure img {
+    margin: 8rem;
+    width: 45rem;
+    border: 0.1rem solid rgb(22, 235, 157);
+    border-radius: 3rem;
+    box-shadow: 0.3rem -0.2rem 0.9rem -0.3rem rgba(118, 213, 247, 1);
+    transition: all 1s;
+  }
+
+  .imagenesMetodologia figure img:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 47rem;
+  }
+
+  .contenedorUno,
+  .contenedorDos,
+  .contenedorTres,
+  .contenedorCuatro,
+  .contenedorCinco,
+  .contenedorSeis,
+  .contenedorSiete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contenedorUno {
+    grid-area: uno;
+  }
+
+  .contenedorDos {
+    grid-area: dos;
+  }
+  .contenedorTres {
+    grid-area: tres;
+  }
+  .contenedorCuatro {
+    grid-area: cuatro;
+  }
+  .contenedorCinco {
+    grid-area: cinco;
+  }
+  .contenedorSeis {
+    grid-area: seis;
+  }
+  .contenedorSiete {
+    grid-area: siete;
+  }
+}

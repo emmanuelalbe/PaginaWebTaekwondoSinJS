@@ -1,0 +1,519 @@
+@media (min-width:320px) and (max-width:520px){
+*{
+    @include siempre;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.carrusel{
+    width:95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel ul{
+   @include carruselUl;
+}
+
+.carrusel ul li{
+    width: 100%;
+    list-style: none;
+   
+}
+
+.carrusel ul li img{
+   width:75%;
+}
+
+@keyframes cambio {
+    0%{margin-left:0;}
+    30%{margin-left:0;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;} 
+}
+
+.mailto{
+    margin: 2rem;
+    text-align: center;
+}
+
+.mailto a{
+    font-size:2rem ;
+    margin-top: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.mailto a .mailtoImg{
+    width:4rem;
+    margin: auto;
+    padding-top:1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sedeCentral,.sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones, .sedeGerli{
+    @include cardSedeMobile;
+}
+
+ .parteUno h3{
+    @include tituloCard;
+}
+
+ .parteUno h4{
+    margin-bottom: 1.5rem;
+    font: 1.8rem $letraParrafo;
+    font-weight: 500;
+}
+
+.parteUno h4:nth-child(3){
+    margin-bottom:3rem;
+}
+
+ .parteUno h4:nth-child(4){
+    margin-bottom:2rem;
+}
+
+ .parteUno ul li{
+    list-style: none;
+    margin-bottom:1rem;
+    font: 1.5rem $letraParrafo;
+    font-weight: 400;
+}
+
+.parteDos{
+    margin-top: 3rem;
+}
+
+.parteDos .cardEnlaces{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.parteDos nav .cardEnlaces li {
+   list-style: none;
+}
+
+ .parteDos nav ul li a img{
+    width: 3rem;
+    transition: all 350ms ease-in;
+}
+
+ .parteDos nav ul li:first-child a img{
+    width: 3rem;
+    transition: all 350ms ease-in-out ;
+}
+
+.parteDos nav ul li:last-child a img{
+    width: 3.4rem;
+    transition: all 350ms ease-in-out ;
+}
+
+.parteDos nav ul li a:nth-child(1) img:hover{
+    width:4rem;
+    background-color: rgba(234, 234, 234, 0.457);
+    border-radius: 100%;
+    padding: 0.6rem;
+    
+    
+}
+
+}
+
+@media (min-width:521px) and (max-width:730px){
+*{
+    @include siempre;
+}
+    
+html{
+    font-size: 62.5%;
+}
+
+.carrusel{
+    width:95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel ul{
+   @include carruselUl;
+}
+
+.carrusel ul li{
+    width: 100%;
+    list-style: none;
+}
+
+.carrusel ul li img{
+   width:75%;
+}
+
+@keyframes cambio {
+    0%{margin-left:0;}
+    30%{margin-left:0;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;} 
+}
+
+.mailto{
+    margin: 2rem;
+    text-align: center;
+}
+
+.mailto a{
+    font-size:2rem ;
+    margin-top: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.mailto a .mailtoImg{
+    width:4rem;
+    margin: auto;
+    padding-top:1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sedeCentral,.sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones, .sedeGerli{
+    @include cardSedeMobile;
+}
+
+.parteUno h3{
+    @include tituloCard;
+}
+
+.parteUno h4{
+    margin-bottom: 1.5rem;
+    font: 2rem $letraParrafo;
+    font-weight: 500;
+}
+
+.parteUno h4:nth-child(3){
+    margin-bottom:4rem;
+}
+
+ .parteUno h4:nth-child(4){
+    margin-bottom:3rem;
+}
+
+.parteUno ul li{
+    list-style: none;
+    margin-bottom:1rem;
+    font: 1.8rem $letraParrafo;
+    font-weight: 400;
+}
+
+.parteDos{
+    margin-top: 3rem;
+}
+
+.parteDos .cardEnlaces{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.parteDos nav .cardEnlaces li {
+   list-style: none;
+}
+
+.parteDos nav ul li a img{
+    width: 4rem;
+    transition: all 350ms ease-in;
+}
+
+.parteDos nav ul li:first-child a img,.parteDos nav ul li:last-child a img{
+    width: 4rem;
+    transition: all 350ms ease-in-out ;
+}
+
+.parteDos nav ul li:last-child a img{
+    width: 4.4rem;
+}
+
+.parteDos nav ul li a:nth-child(1) img:hover{
+    width:5rem;
+    background-color: rgba(215, 238, 243, 0.701);
+    border-radius: 100%;
+    padding: 0.6rem;
+}
+}
+
+@media (min-width:731px) and (max-width:931px){
+
+*{
+    @include siempre;
+}
+    
+html{
+    font-size: 62.5%;
+}
+
+.carrusel{
+    width:95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel ul{
+   @include carruselUl;
+}
+
+.carrusel ul li{
+    width: 100%;
+    list-style: none;
+}
+
+.carrusel ul li img{
+   width:40rem;
+}
+
+@keyframes cambio {
+    0%{margin-left:0;}
+    30%{margin-left:0;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;} 
+}
+
+.mailto{
+    margin: 4rem;
+    text-align: center;
+}
+
+.mailto a{
+    font-size:3rem ;
+    margin-top: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.mailto a .mailtoImg{
+    width:5rem;
+    margin: auto;
+    padding-top:1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sedeCentral,.sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones, .sedeGerli{
+    @include cardSedeMobile;
+    margin:8rem;
+}
+
+.parteUno h3{
+    @include tituloCardNotebook;
+}
+
+.parteUno h4{
+    margin-bottom: 1.5rem;
+    font: 2.5rem $letraParrafo;
+    font-weight: 500;
+}
+
+.parteUno h4:nth-child(3){
+    margin-bottom:2rem;
+}
+
+.parteUno h4:nth-child(4){
+    margin-bottom:4rem;
+}
+
+.parteUno ul li{
+    list-style: none;
+    margin-bottom:1rem;
+    font: 2.3rem $letraParrafo;
+    font-weight: 400;
+}
+
+.parteDos{
+    margin-top: 3rem;
+}
+
+.parteDos .cardEnlaces{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.parteDos nav .cardEnlaces li {
+   list-style: none;
+}
+
+.parteDos nav ul li a img{
+    width: 4rem;
+    transition: all 350ms ease-in;
+}
+
+.parteDos nav ul li:first-child a img,.parteDos nav ul li:last-child a img{
+    width: 4rem;
+    transition: all 350ms ease-in-out ;
+}
+
+.parteDos nav ul li:last-child a img{
+    width: 4.4rem;
+}
+
+.parteDos nav ul li a:nth-child(1) img:hover{
+    width:5rem;
+    background-color: rgba(215, 238, 243, 0.701);
+    border-radius: 100%;
+    padding: 0.6rem;
+}
+
+}
+
+@media (min-width:932px){
+*{
+    @include siempre;
+}
+    
+html{
+    font-size: 62.5%;
+}
+
+.carrusel{
+    width:95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel ul{
+   @include carruselUl;
+}
+
+.carrusel ul li{
+    width: 100%;
+    list-style: none;
+}
+
+.carrusel ul li img{
+   width:40rem;
+}
+
+@keyframes cambio {
+    0%{margin-left:0;}
+    30%{margin-left:0;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;} 
+}
+
+.mailto{
+    margin: 4rem;
+    text-align: center;
+}
+
+.mailto a{
+    font-size:3rem ;
+    margin-top: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.mailto a .mailtoImg{
+    width:5rem;
+    margin: auto;
+    padding-top:1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contenedorInstructor{
+margin:2rem;
+display: grid;
+grid-template-areas: 
+"gmg dragones "
+"rayo gerli"
+" quilmes rosario "
+"rioja rioja";
+grid-column-gap:4rem;
+    grid-row-gap:4rem;
+
+}
+
+.sedeCentral{
+    grid-area:gmg;
+}
+
+.sedeQuilmes{
+    grid-area:quilmes;
+}
+
+.sedeDragones{
+    grid-area:dragones;
+}
+
+.sedeGerli{
+    grid-area:gerli;
+}
+
+.sedeRioja{
+    margin: auto;
+    grid-area:rioja;
+}
+
+.sedeRosario{
+    grid-area:rosario;
+}
+
+.sedeRayo{
+    grid-area:rayo;
+}
+
+.sedeCentral,.sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones, .sedeGerli{
+    @include cardSedeNotebook;
+}
+
+.parteUno h3{
+    @include tituloCardNotebook;
+    margin-bottom: 1.3rem;
+}
+
+.parteUno h4{
+    margin-bottom: 2rem;
+    font: 2.4rem $letraParrafo;
+    font-weight: 300;
+}
+
+.parteUno ul li{
+    list-style: none;
+    margin-bottom:0.6rem;
+    font: 2.3rem $letraParrafo;
+    font-weight: 400;
+}
+
+.parteDos{
+    margin-top: 1.6rem;
+}
+
+.parteDos .cardEnlaces{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parteDos nav ul li a img{
+    width: 4rem;
+    transition: all 350ms ease-in;
+}
+
+.parteDos nav ul li:first-child a img,.parteDos nav ul li:last-child a img{
+    width: 4rem;
+    transition: all 350ms ease-in-out ;
+}
+
+.parteDos nav ul li:last-child a img{
+    width: 4.4rem;
+}
+
+.parteDos nav ul li a:nth-child(1) img:hover{
+    width:5rem;
+    background-color: rgba(215, 238, 243, 0.701);
+    border-radius: 100%;
+    padding: 0.6rem;
+}
+
+}

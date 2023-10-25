@@ -1,0 +1,316 @@
+//NavBar- Mobile
+@media (min-width: 320px) and (max-width: 520px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  .color {
+    width: 100%;
+    position: fixed;
+    background: rgb(102, 95, 95);
+    font: 2rem $letraParrafo;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    transition: all 700ms;
+  }
+
+  .nav-link {
+    color: rgb(7, 7, 7);
+    transition: all 320ms;
+  }
+  .nav-link:hover {
+    color: rgba(118, 126, 237, 0.589);
+  }
+  .nav-link:active {
+    color: rgba(22, 87, 96, 0.589);
+  }
+
+  /*Estilo Footer*/
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.7)),
+      url(../imagenes/body.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+
+    footer {
+      margin-top: 4rem;
+      nav {
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          li {
+            margin-right: 3rem;
+            list-style: none;
+
+            a {
+              img {
+                width: 3rem;
+                transition: all 350ms ease-in-out;
+                &:hover {
+                  width: 3.5rem;
+                  background-color: rgba(184, 147, 147, 0.457);
+                  border-radius: 100%;
+                  padding: 0.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//NavBar-Tablet
+@media (min-width: 521px) and (max-width: 730px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+      url(../imagenes/body.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .color {
+    background: rgb(102, 95, 95);
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font: 2.5rem $letraParrafo;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .nav-item {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    transition: all 550ms;
+  }
+
+  .nav-item:hover {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+
+  .nav-link {
+    color: black;
+    transition: $transicion;
+  }
+
+  .nav-link:hover {
+    color: rgba(42, 54, 218, 0.589);
+  }
+
+  .nav-link:active {
+    color: rgba(2, 12, 150, 0.589);
+  }
+  footer {
+    margin-top: 4rem;
+    nav {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+          margin-right: 4rem;
+          list-style: none;
+
+          a {
+            img {
+              width: 3.5rem;
+              transition: all 350ms ease-in-out;
+              &:hover {
+                width: 4rem;
+                background-color: rgba(255, 255, 255, 0.457);
+                border-radius: 100%;
+                padding: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+      url(../imagenes/body.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .color {
+    text-align: center;
+    background: rgba(201, 200, 200, 0.71);
+    font: 2.5rem $letraParrafo;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .nav-item {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    transition: all 550ms;
+  }
+
+  .nav-item:hover {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+
+  .nav-link {
+    color: black;
+    transition: $transicion;
+  }
+
+  .nav-link:hover {
+    color: rgba(42, 54, 218, 0.589);
+  }
+
+  .nav-link:active {
+    color: rgba(2, 12, 150, 0.589);
+  }
+  footer {
+    margin-top: 4rem;
+    nav {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+          margin-right: 4rem;
+          list-style: none;
+
+          a {
+            img {
+              width: 4rem;
+              transition: all 350ms ease-in-out;
+              &:hover {
+                width: 4.5rem;
+                background-color: rgba(255, 255, 255, 0.457);
+                border-radius: 100%;
+                padding: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+      url(../imagenes/body.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .navbar {
+    background: black;
+  }
+
+  .nav-link {
+    font: 1.8rem $letraParrafo;
+    margin: 1rem 1rem 1rem 6rem;
+    color: white;
+    transition: all 600ms;
+  }
+
+  .nav-link:visited {
+    color: white;
+  }
+
+  .nav-link:hover {
+    font-size: 2rem;
+    color: rgba(14, 158, 177, 0.63);
+    border-bottom: 0.1rem solid rgba(14, 158, 177, 0.63);
+    border-top: 0.1rem solid rgba(14, 158, 177, 0.63);
+  }
+  .nav-link:active {
+    font-size: 1.7rem;
+    color: rgba(14, 158, 177, 0.338);
+    border-bottom: 0.1rem solid rgba(14, 158, 177, 0.386);
+    border-top: 0.1rem solid rgba(14, 158, 177, 0.256);
+  }
+
+  footer {
+    margin-top: 4rem;
+    nav {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+          margin-right: 3rem;
+          list-style: none;
+
+          a {
+            img {
+              width: 4rem;
+              transition: all 350ms ease-in-out;
+              &:hover {
+                width: 5rem;
+                background-color: rgba(250, 247, 247, 0.457);
+                border-radius: 100%;
+                padding: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

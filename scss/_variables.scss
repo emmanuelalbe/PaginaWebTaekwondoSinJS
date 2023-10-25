@@ -1,0 +1,18 @@
+//Letra Titulo
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+//Letra parrafos
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+$fondoNavCelular:linear-gradient(10deg, rgb(255, 255, 255) 20%, rgba(239, 243, 6, 0.689) 20% 40%, rgba(27, 160, 4, 0.728) 40% 60%, rgba(6, 37, 129, 0.769) 60% 80%, rgba(255, 0, 0, 0.749) 80%, black );
+
+$letrablanca:rgb(255, 255, 255); //rgb(175, 242, 225);
+
+$letraTitulo:'Staatliches', cursive;
+
+$letraParrafo:'Roboto Condensed', sans-serif;
+
+$transicion: all 700ms;
+
+$bordeCard: 0.25rem;
